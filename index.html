@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css"/>
+    <script src="timer.js" defer ></script>
+    <script src="audio.js" defer></script>
+    <title>Custom player</title>
+  </head>
+  <body>
+       <main id="audio-container">
+           <section  class="bar-container">
+                <p class="p1"></p>
+                <p class="p2"></p>
+                <p class="p3"></p>
+                <p class="p4"></p>
+                <p class="p5"></p>
+           </section>
+            <section id="auto-player">
+                  <button id="play">&#9658</button>
+                  <button id="stop" title="stop">&#x23f9</button>
+                  <input type="range" value="0" id="audioRange"/>
+                  <span id="timer">00:00</span>
+            </section> 
+    
+           <section class="volume-container">
+               <h3 data-volumeRate> 50% </h3>
+               <input type="range" id="volume-slide" value="50"/> 
+           </section>  
+           <section class="all-btns">
+             <button id="backward">backward</button>
+             <button id="reset">reset default</button>
+             <button id="auto">auto</button>
+             <button id="replay">replay</button>
+             <button id="shuffle">shuffle</button>
+             <button id="prev">prev</button>
+             <button id="next">next</button>
+             <button id="forward">forward</button>
+           </section>  
+          </main>  
+
+  </body>
+</html>
